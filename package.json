@@ -1,0 +1,15 @@
+{
+  "name": "user-service-mock",
+  "version": "1.0.0",
+  "description": "Mock server pour Alumni Platform - User Service API (genere depuis user-service.yaml avec Prism)",
+  "scripts": {
+    "start": "prism mock user-service.yaml -p ${PORT:-4010} -h 0.0.0.0 --cors -d",
+    "start:static": "prism mock user-service.yaml -p ${PORT:-4010} -h 0.0.0.0 --cors"
+  },
+  "dependencies": {
+    "@stoplight/prism-cli": "^5.8.4"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
